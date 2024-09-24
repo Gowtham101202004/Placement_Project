@@ -1,0 +1,127 @@
+
+/*----------------------------------What will you learn---------------------------------*/
+
+.Item1-container{
+    margin: 0;
+    padding: 0;  
+}
+.Item1-container h1{
+    font-size: 30px;
+    padding: 8px;
+    
+}
+.Item1-container ul{
+   list-style-image: url('../images/list-tick.svg');
+   padding:3px;
+    
+}
+
+.Item1-container ul li{
+    padding: 3px;
+    font-size: 18px;
+}
+/*-------------------------------------------Course content--------------------------------*/
+
+.item2-course-container summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    font-weight: 500;
+    font-size: 21px;
+    cursor: pointer;
+  }
+  
+.item2-course-container summary::after {
+    content:'';
+    width: 18px;
+    height: 10px;
+    background: url('https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg') no-repeat;
+    background-size: cover;
+    transition:all 0.5s;
+    margin: 0 30px 0 30px;
+  }
+  
+.item2-course-container  details[open] > summary::after {
+    transform: rotate(180deg) scale(1.2);
+    transition-duration: 0.5s;
+  }
+  
+.item2-course-container  summary::-webkit-details-marker {
+    display: none;
+  }
+  
+.item2-course-container  summary {
+    color: #30353b;
+    border-radius: 5px;
+    
+  }
+
+  .details-container{
+   display: flex;
+  }
+  
+  .item2-course-container  details[open] summary {
+    border-radius: 5px 5px 0 0; 
+    background-color: #9696FE;
+    font-weight: 500;
+    transition-duration: 0.5s;
+  }
+  
+  .item2-course-container  details {
+    background-color:#FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 100%;
+
+  }
+  
+  
+  .item2-course-container article > *:first-child {margin: 0;}
+  .item2-course-container article > * + * {margin: 0.75em 0 0 0; }
+  .item2-course-container article {
+    padding: 10px; margin: 0;
+    transition-duration: 0.5s;
+    background-color: #EAEEFA;
+  }
+
+  .item2-course-container{
+    padding: 6px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    width: 100%;
+  }
+  .course-content-list li{
+    list-style-type:square;
+    font-size: large;
+  }
+
+  /*-----------------------------------------Instructors-------------------------------------*/
+
+  .instructors-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+  }
+
+  .instructors-item{
+    width: 80%;
+    padding: 10px;
+  }
+
+  .instructors-content{
+    padding: 8px;
+    list-style-image: url('../images/list-tick.svg');
+  }
+
+  .instructors-content li h3{
+    padding: 8px;
+  }
+  .instructors-content  p{
+    padding-left: 10px;
+  }
